@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -56,3 +57,58 @@
     text-decoration: none;
     color: white;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.main{
+    background-image: url(/web/img/pizzaria-tamanhogigante.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 970px;
+    width: 100%;
+    max-width: 100%;
+}
+.main-menu{
+    height: 50px;
+    background-color: rgba(19, 23, 32, 0.835);
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+}
+.center{
+    display: flex;
+    height: 50px;
+    width: 1200px;
+    max-width: 100%;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+.main-menu:hover{
+    background-color: rgb(19, 23, 32);
+}
+.logo{
+    width: 30%;
+    color: white;
+    background-color: red;
+}
+
+.itens-menu{
+    width: 70%;
+    background-color: blue;
+    text-align: right;
+}
+>>>>>>> 9994199be594eabde89377591fab288722678b79
