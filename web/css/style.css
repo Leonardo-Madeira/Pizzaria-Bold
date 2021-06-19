@@ -3,34 +3,38 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
-
 }
-
+/**/
+html, body{
+    background-color: rgb(238, 233, 228);
+}
 .main{
     background-image: url(/web/img/pizzaria-tamanhogigante.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 970px;
+    background-attachment: fixed; /*trava a imagem quando usa o scroll*/
+    height: 969px !important;
     width: 100%;
     max-width: 100%;
 }
 .main-menu{
-    height: 50px;
+    height: 60px;
     background-color: rgba(19, 23, 32, 0.835);
     margin: auto;
     width: 100%;
     max-width: 100%;
-    position: fixed;
+    position: fixed !important;
 }
+/**/
 .center{
     display: flex;
     height: 50px;
     width: 1200px;
     max-width: 100%;
-    background-color: blueviolet;
     margin: 0 auto;
 }
+/**/
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -40,73 +44,232 @@
 .main-menu:hover{
     background-color: rgb(19, 23, 32);
 }
+/**/
 .logo{
-    width: 30%;
+    width: 40%;
+    max-width: 100%;
     color: white;
-    background-color: rgb(0, 255, 200);
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 4%;
 }
-
+/**/
 .itens-menu{
-    width: 70%;
-    background-color: rgb(148, 59, 118);
+    width: 60%;
+    max-width: 100%;
     text-align: right;
+    padding-top: 10px;
+    padding-right: 4%;
 }
-
 .itens-menu a{
     text-decoration: none;
     color: white;
+    margin-left: 20px;
+    font-size: 25px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
 
+.itens-menu-mobile{
+    display: none;
 }
 
-.main{
-    background-image: url(/web/img/pizzaria-tamanhogigante.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 970px;
-    width: 100%;
-    max-width: 100%;
-}
-.main-menu{
-    height: 50px;
-    background-color: rgba(19, 23, 32, 0.835);
-    margin: auto;
+/*MENU-MOBILE*/
+.all-menu-mobile-efeito {
+    height: 0;
     width: 100%;
     max-width: 100%;
     position: fixed;
-}
-.center{
-    display: flex;
-    height: 50px;
-    width: 1200px;
-    max-width: 100%;
-    background-color: blueviolet;
-    margin: 0 auto;
-}
-.menu{
-    display: flex;
-    flex-wrap: wrap;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 23, 32, 0.924);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .itens-menu-mobile-efeito {
+    position: relative;
+    top: 25%;
     width: 100%;
-    max-width: 100%;
-}
-.main-menu:hover{
-    background-color: rgb(19, 23, 32);
-}
-.logo{
-    width: 30%;
-    color: white;
-    background-color: red;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .all-menu-mobile-efeito a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color:  white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .itens-menu-mobile-efeito a:hover {
+    font-size: 50px;
+  }
+  
+  .all-menu-mobile-efeito .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+ 
+  /*fim menu-mobile*/
+
+ /*RESPONSIVO MENU*/
+ @media(max-width:770px){
+    .itens-menu-mobile img{
+        width: 32px;
+        padding-top: 15px;
+    }
+    .itens-menu-mobile{
+        display: inline-block;
+        text-align: right ;
+        width: 60%;
+        padding: 0 4%;
+    }
+    .itens-menu{
+        display: none;
+    }
 }
 
-.itens-menu{
-    width: 70%;
-    background-color: blue;
-    text-align: right;
+.text-main{
+    width: 900px;
+    max-width: 100%;
+    display: block; 
+    margin: auto;
+    padding-top: 400px;
+    text-align: center;
 }
+
+.text-main h1{
+    font-size: 70px;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+.text-main span{
+    padding-left: 10px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+/********************CARDAPIO***********************************/
+
+.cardapio{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding: 0 4%;
+
+}
+.all-cardapio{
+    width: 700px;
+    max-width: 100%;
+
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.698);
+}
+
+.titulo-cardapio h1{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+    padding-bottom: 50px;
+    color: rgb(22, 22, 22);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.287);
+}
+.itens-cardapio{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.678);
+    ;
+}
+.cada-item-cardapio{ background-color: rgb(255, 255, 255);}
+.cada-item-cardapio h1{padding-top: 20px;}
+.cada-item-cardapio b{ padding-left: 2%; color: rgba(0, 0, 0, 0.883);}
+.cada-item-cardapio span{width: 100%;text-align: right; max-width: 100%;;
+display: block;padding-right: 2%; color: rgb(42, 63, 21);}
+.cada-item-cardapio p{padding-bottom: 30px; padding-left: 2%; width: 550px;  max-width: 100%; color: rgba(0, 0, 0, 0.698);}
+
+/*************************************************************/
+.img-pequeno{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-image: url(/web/img/brett-jordan-m8pKY-8bdyo-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/***************************CONTATO******************************************/
+
+.contato{
+    width: 100%;
+    height: 100%;
+    background-size: blue;
+
+}
+.center-contato{
+        width: 1000px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2% 2%;
+
+}
+.text-contato h1{ text-align: center;    font-size: 42px;
+    padding-top: 50px;}
+
+.all-box-contato{
+
+}
+.all-box-contato p{
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 20px;
+}
+
+/***********************GOOGLE MAPS**********************************/
+
+.google-maps{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: rgb(19, 13, 24);
+}
+.google-maps h1{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+/*****************************SOBRE****************************************/
+
+.sobre{}
+.h1-sobre h1{ 
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+.center-sobre{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.text-sobre{
+
+}
+.img-sobre img{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 40px;
+}
+.horarios-sobre{display: flex;}
