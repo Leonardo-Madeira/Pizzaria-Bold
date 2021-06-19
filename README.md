@@ -1,2 +1,2 @@
 # PizzariaBold
- Modelo de Pizzaria, ainda esta em desenvolvimento. Não tenho design, então vou ter que da um jeito que ficar bonito o site. Alguma dica? entra em contato :P
+ Modelo de Pizzaria, Projeto completo. Não tenho design, então dei um jeito para ficar ''bonito''. Alguma dica? entra em contato :P
