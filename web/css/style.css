@@ -4,14 +4,9 @@
     box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
 }
-/**/
-
 :root{
     --corPrincipal : rgb(20, 14, 24);
-    /*variavel --corPrincipal
-    declarar a cor, ex: background-color: var(--corPrincipal)*/
 }
-
 html, body{
     background-color: rgb(238, 233, 228);
 }
@@ -33,14 +28,12 @@ html, body{
     max-width: 100%;
     position: fixed !important;
 }
-/**/
 .center{
     display: block;
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
-/**/
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -48,10 +41,9 @@ html, body{
     max-width: 100%;
 }
 .main-menu:hover{
-    background-color:   var(--corPrincipal);
+    background-color: var(--corPrincipal);
     max-width: 100%;
 }
-/**/
 .logo{
     width: 40%;
     max-width: 100%;
@@ -60,7 +52,6 @@ html, body{
     font-size: 25px;
     padding-left: 4%;
 }
-/**/
 .itens-menu{
     width: 60%;
     max-width: 100%;
@@ -75,12 +66,9 @@ html, body{
     font-size: 25px;
     max-width: 100%;
 }
-
-
 .itens-menu-mobile{
     display: none;
 }
-
 /*MENU-MOBILE*/
 .all-menu-mobile-efeito {
     height: 0;
@@ -95,7 +83,6 @@ html, body{
     overflow-y: hidden;
     transition: 0.5s;
   }
-  
   .itens-menu-mobile-efeito {
     position: relative;
     top: 25%;
@@ -104,7 +91,6 @@ html, body{
     margin-top: 30px;
     max-width: 100%;
   }
-  
   .all-menu-mobile-efeito a {
     padding: 15px;
     text-decoration: none;
@@ -114,11 +100,9 @@ html, body{
     transition: 0.3s;
     max-width: 100%;
   }
-  
   .itens-menu-mobile-efeito a:hover {
     font-size: 50px;
   }
-  
   .all-menu-mobile-efeito .closebtn {
     position: absolute;
     top: 20px;
@@ -126,9 +110,7 @@ html, body{
     font-size: 60px;
     max-width: 100%;
   }
- 
   /*fim menu-mobile*/
-
  /*RESPONSIVO MENU*/
  @media(max-width:770px){
     .itens-menu-mobile img{
@@ -147,7 +129,6 @@ html, body{
         display: none;
     }
 }
-
 .text-main{
     width: 900px;
     max-width: 100%;
@@ -156,14 +137,12 @@ html, body{
     padding-top: 400px;
     text-align: center;
 }
-
 .text-main h1{
     font-size: 70px;
     max-width: 100%;
     color: white;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
-
 .text-main span{
     padding-left: 10px;
     max-width: 100%;
@@ -171,9 +150,7 @@ html, body{
     color: white;
     text-shadow: 3px 3px 3px black;
 }
-
 /********************CARDAPIO***********************************/
-
 .cardapio{
     width: 100%;
     max-width: 100%;
@@ -182,17 +159,14 @@ html, body{
     display: block;
     padding: 5% 4%;
     background-color: var(--corPrincipal);
-
 }
 .all-cardapio{
     width: 700px;
     max-width: 100%;
-
     border-radius: 30px;
     margin: auto;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.698);
 }
-
 .titulo-cardapio h1{
     text-align: center;
     font-size: 40px;
@@ -227,7 +201,6 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     background-attachment: fixed;
 }
 /***************************CONTATO******************************************/
-
 .contato{
     width: 100%;
     height: 100%;
@@ -245,7 +218,6 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
 }
 .text-contato h1{ text-align: center;    font-size: 42px;
     padding-top: 50px;  max-width: 100%;}
-
 .all-box-contato{
     width: 700px;
     display: block;
@@ -260,9 +232,7 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     text-decoration: none;
     color: rgb(63, 226, 34);
 }
-
 /***********************GOOGLE MAPS**********************************/
-
 .google-maps{
     width: 100%;
     max-width: 100%;
@@ -276,9 +246,7 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     padding-top: 70px;
     font-size: 50px;
 }
-
 /*****************************SOBRE****************************************/
-
 .h1-sobre h1{ 
     text-align: center;
     padding-top: 50px;
@@ -328,7 +296,6 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     width: 100%;
 
 }
-
 @media(max-width:735px){
     .center-sobre{
         display: block;
@@ -355,9 +322,6 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
         text-align: center;
     }
 }
-
-/***************************************Footer***************************************************/
-
-
+/**************************************Footer**************************************************/
 .center-footer{background-color: var(--corPrincipal); margin-top: 60px; max-width: 100%;}
 .center-footer h1{ color: white; text-align: center;padding: 2%; font-size: 18px;}
