@@ -11,40 +11,118 @@
     <title>Pizzaria Bold</title>
 </head>
 <body>
+
     <section class="main">
         <div class="main-menu">
             <div class="center">
                 <div class="menu">
                     <div class="logo">Pizzaria Bold</div>
-                    <div class="itens-menu"><span><a href="">Home</a></span><span><a href="">Cardápio</a></span><span><a href="">Contato</a></span><span><a href="">Sobre</a></span></div>
+                    <div class="itens-menu">
+                        <span><a href="">Home</a></span>
+                        <span><a href="">Cardápio</a></span>
+                        <span><a href="">Contato</a></span>
+                        <span><a href="">Sobre</a></span>
+                    </div>
+                    <div class="itens-menu-mobile" onclick="abrir()">
+                        <img style="cursor: pointer;" src="./img/icone-menu-branco.png" alt="" >
+                    </div>
                 </div>
+            
+                    </div>
+                    <div id="myNav" class="all-menu-mobile-efeito">
+                        <a href="javascript:void(0)" class="closebtn" onclick="fechar()">&times;</a>
+                        <div class="itens-menu-mobile-efeito">
+                        <a href="#">Home</a>
+                        <a href="#">Cardápio</a>
+                        <a href="#">Contato</a>
+                        <a href="">Sobre</a>
+                        </div>
+                    </div>
+                    <script>
+                        function abrir() {
+                            document.getElementById("myNav").style.height = "100%";
+                            }
+        
+                        function fechar() {
+                            document.getElementById("myNav").style.height = "0%";
+                            }
+                    </script>
+                  
             </div>
         </div>
+        <div class="text-main"><h1><strong>Pizzaria Bold</strong> </h1><span><strong> A melhor Pizzaria de Florianópolis</strong> </span></div>
     </section>
+
     <section class="cardapio">
+        <div class="titulo-cardapio"><h1>Cardápio</h1></div>
         <div class="center">
+            
             <div class="all-cardapio">
-                <div class="titulo-cardapio"><h1>Cardápio</h1></div>
                 <div class="itens-cardapio">
                     <div class="cada-item-cardapio">
-                        <h1>Pizza de quatro queijos</h1>
-                        <p>Queijo, cebolo, bla bla bla</p>
-                    </div>
-                    <div class="cada-item-cardapio">
-                        <h1>Pizza de quatro queijos</h1>
-                        <p>Queijo, cebolo, bla bla bla</p>
-                    </div>
-                    <div class="cada-item-cardapio">
-                        <h1>Pizza de quatro queijos</h1>
-                        <p>Queijo, cebolo, bla bla bla</p>
-                    </div>
-                    <div class="cada-item-cardapio">
-                        <h1>Pizza de quatro queijos</h1>
-                        <p>Queijo, cebolo, bla bla bla</p>
+                        <h1><b>Calabresa</b><span>R$ 59,99</span></h1>
+                        <p> Fatias de calabresa, molho de tomates, cebola e azeitonas pretas</p>
+                        <hr>                   
+                        <h1><b>Portuguesa</b><span>R$ 62,99</span></h1>
+                        <p>Ovos cozidos, presunto, molho de tomates, cebola e azeitonas pretas</p>
+                        <hr>                        
+                        <h1><b>Quatro queijos</b><span>R$ 62,99</span></h1>
+                        <p>Muçarela, catupiry, molho de tomates, gorgonzola e parmesão</p>
+                        <hr>                 
+                        <h1><b>Bacon</b><span>R$ 69,99</span></h1>
+                        <p>Fatias de Bacon, molho de tomates, cebola e azeitonas pretas</p>
+                        <hr>
+                        <h1><b>Palmito</b><span>R$ 70,50</span></h1>
+                        <p>Fatias de Palmito, molho de tomates, cebola e azeitonas pretas</p>
+                        <hr>
+                        <h1><b>Camarão</b><span>R$ 79,99</span></h1>
+                        <p>Camarão, fatias de queijo com bacon, molho de tomates, cebola e azeitonas pretas</p>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    <section class="img-pequeno"></section>
     </section>
+    <section class="contato">
+            <div class="text-contato"><h1>Contato</h1></div>
+        <div class="center-contato">
+            <div class="all-box-contato">
+                <div class="msg-contato"><p><strong>Reserve já o seu pedido!!</strong> <span> ligue para  ( 48 ) 0000 - 0000 ou envie uma mensagem:<a href="https://wa.me/5548984274450" target="_blank">Whats-app</a></span></p>
+               </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="google-maps">
+        <h1>GOOGLE MAPS</h1>
+    </section>
+    <section class="sobre">
+        <div class="h1-sobre"><h1>Sobre</h1></div>
+            <div class="center-sobre">
+                <div class="text-sobre">
+                    <p>A Pizza Restaurant foi fundada em blabla pelo Sr. Italiano em lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercício ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="center">
+                <div class="img-sobre">
+                    <img src="/web/img/sobre-img.jpg" alt="">
+                </div>
+                <div class="horarios-sobre">
+                    <div>
+                        <p>Seg e Ter FECHADO</p>
+                        <p>Quarta-feira das 17:00 às 02:00</p>
+                        <p>Quinta-feira, das 17:00 às 02:00</p>
+                    </div>
+                    <div class="w3-col s6">
+                        <p>Sexta-feira, das 17:00 às 02:00</p>
+                        <p>Sábado, das 17:00 às 00:00</p>
+                        <p>Domingo fechado</p>
+                      </div>
+                </div>
+                </div>
+            </div>
+    </section>
+
 </body>
 </html>
