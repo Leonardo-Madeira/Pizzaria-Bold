@@ -272,20 +272,24 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     color: var(--corPrincipal);
 }
 .center-sobre{
+    display: flex;
     width: 900px;
     max-width: 100%;
     margin: 0 auto;
+    padding-top: 50px;
 }
 .text-sobre{
-    width: 700px;
-    padding: 40px 0;
+    width: 50%;
+    padding: 0 5%;
     margin: auto;
+
 }
 .text-sobre p{
     font-size: 20px;
     text-align: center;
 }
 .img-sobre{
+    width: 50%;
     display: block;
     text-align: center;
 }
@@ -296,17 +300,16 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
 }
 .horarios-sobre{
     display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
-    background-color: brown;
     text-align: center;
 }
 .horarios-sobre p{
-    color: cadetblue;
+    color: var(--corPrincipal);
     text-align: center;
+    font-size: 15px;
 }
 .h-box{
-    padding: 0p 100px;
-    width: 300px;
-    background-color: black;
+    padding: 20px 0;
+    width: 100%;
+
 }
