@@ -205,8 +205,7 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     width: 100%;
     height: 100%;
     max-width: 100%;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 40px 5%;
 
 }
 .center-contato{
@@ -308,8 +307,7 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
         width: 100%;
         display: block;
         text-align: center;
-        padding-right: 2%;
-        background-color: red;
+        padding: 0 2%;
     }
     .text-sobre{
         width: 100%;
@@ -319,7 +317,7 @@ display: block;padding-right: 2%; color: rgb(42, 63, 21);}
     }
     .text-sobre p{
         font-size: 20px;
-        text-align: center;
+        text-align: left
     }
 }
 /**************************************Footer**************************************************/
