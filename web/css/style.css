@@ -1,385 +1,400 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
 }
 
-:root{
-    --corPrincipal : rgb(20, 14, 24);
+:root {
+  --corPrincipal: rgb(20, 14, 24);
 }
 
-html, body{
-    background-color: rgb(238, 233, 228);
+html,
+body {
+  background-color: rgb(238, 233, 228);
 }
 
-.main{
-    background-image: url(/web/img/pizzaria-tamanhogigante.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /*trava a imagem quando usa o scroll*/
-    height: 969px !important;
-    width: 100%;
-    max-width: 100%;
+.main {
+  background-image: url(/web/img/pizzaria-tamanhogigante.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*trava a imagem quando usa o scroll*/
+  height: 969px !important;
+  width: 100%;
+  max-width: 100%;
 }
 
-.main-menu{
-    height: 60px;
-    background-color: rgba(19, 13, 24, 0.52);
-    margin: auto;
-    width: 100%;
-    max-width: 100%;
-    position: fixed !important;
+.main-menu {
+  height: 60px;
+  background-color: rgba(19, 13, 24, 0.52);
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  position: fixed !important;
 }
 
-.center{
-    display: block;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+.center {
+  display: block;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 100%;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
-.main-menu:hover{
-    background-color: var(--corPrincipal);
-    max-width: 100%;
+.main-menu:hover {
+  background-color: var(--corPrincipal);
+  max-width: 100%;
 }
 
-.logo{
-    width: 40%;
-    max-width: 100%;
-    color: white;
-    padding-top: 10px;
-    font-size: 25px;
-    padding-left: 4%;
+.logo {
+  width: 40%;
+  max-width: 100%;
+  color: white;
+  padding-top: 10px;
+  font-size: 25px;
+  padding-left: 4%;
 }
 
-.itens-menu{
-    width: 60%;
-    max-width: 100%;
-    text-align: right;
-    padding-top: 10px;
-    padding-right: 4%;
+.itens-menu {
+  width: 60%;
+  max-width: 100%;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 4%;
 }
 
-.itens-menu a{
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-size: 25px;
-    max-width: 100%;
+.itens-menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+  max-width: 100%;
 }
 
-.itens-menu-mobile{
-    display: none;
+.itens-menu-mobile {
+  display: none;
 }
 
 /*MENU-MOBILE*/
 
 .all-menu-mobile-efeito {
-    height: 0;
-    width: 100%;
-    max-width: 100%;
-    max-width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(19, 23, 32, 0.924);
-    overflow-y: hidden;
-    transition: 0.5s;
+  height: 0;
+  width: 100%;
+  max-width: 100%;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(19, 23, 32, 0.924);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
-  .itens-menu-mobile-efeito {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    max-width: 100%;
+.itens-menu-mobile-efeito {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  max-width: 100%;
 }
-  .all-menu-mobile-efeito a {
-    padding: 15px;
-    text-decoration: none;
-    font-size: 36px;
-    color:  white;
-    display: block;
-    transition: 0.3s;
-    max-width: 100%;
-}
-
-  .itens-menu-mobile-efeito a:hover {
-    font-size: 50px;
+.all-menu-mobile-efeito a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  max-width: 100%;
 }
 
-  .all-menu-mobile-efeito .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    max-width: 100%;
-}
-  /*fim menu-mobile*/
- /*RESPONSIVO MENU*/
-@media(max-width:770px){
-    .itens-menu-mobile img{
-        width: 32px;
-        max-width: 100%;
-        padding-top: 15px;
-}
-    .itens-menu-mobile{
-        display: inline-block;
-        text-align: right ;
-        width: 60%;
-        max-width: 100%;
-        padding: 0 4%;
-    }
-    .itens-menu{
-        display: none;
-    }
+.itens-menu-mobile-efeito a:hover {
+  font-size: 50px;
 }
 
-.text-main{
-    width: 900px;
+.all-menu-mobile-efeito .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  max-width: 100%;
+}
+/*fim menu-mobile*/
+/*RESPONSIVO MENU*/
+@media (max-width: 770px) {
+  .itens-menu-mobile img {
+    width: 32px;
     max-width: 100%;
-    display: block; 
-    margin: auto;
-    padding-top: 400px;
-    text-align: center;
+    padding-top: 15px;
+  }
+  .itens-menu-mobile {
+    display: inline-block;
+    text-align: right;
+    width: 60%;
+    max-width: 100%;
+    padding: 0 4%;
+  }
+  .itens-menu {
+    display: none;
+  }
 }
 
-.text-main h1{
-    font-size: 70px;
-    max-width: 100%;
-    color: white;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+.text-main {
+  width: 900px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 400px;
+  text-align: center;
 }
 
-.text-main span{
-    padding-left: 10px;
-    max-width: 100%;
-    font-size: 25px;
-    color: white;
-    text-shadow: 3px 3px 3px black;
+.text-main h1 {
+  font-size: 70px;
+  max-width: 100%;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+.text-main span {
+  padding-left: 10px;
+  max-width: 100%;
+  font-size: 25px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
 }
 
 /********************CARDAPIO***********************************/
 
-.cardapio{
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin: auto;
-    display: block;
-    padding: 5% 4%;
-    background-color: var(--corPrincipal);
+.cardapio {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  padding: 5% 4%;
 }
 
-.all-cardapio{
-    width: 700px;
-    max-width: 100%;
-    border-radius: 30px;
-    margin: auto;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.698);
+.all-cardapio {
+  width: 700px;
+  max-width: 100%;
+  border-radius: 30px;
+  margin: auto;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.698);
 }
 
-.titulo-cardapio h1{
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 50px;
-    color: rgba(255, 255, 255, 0.89);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.287);
+.titulo-cardapio h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+  color: var(--corPrincipal);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.287);
 }
 
-.itens-cardapio{
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.678);
-    ;
+.itens-cardapio {
+  width: 100%;
+  max-width: 100%;
 }
 
-.cada-item-cardapio{ background-color: rgba(227, 222, 235, 0.938);}
-.cada-item-cardapio h1{padding-top: 20px;}
-.cada-item-cardapio b{ padding-left: 2%; color: var(--corPrincipal);}
-.cada-item-cardapio span{width: 100%;text-align: right; max-width: 100%;;
-display: block;padding-right: 2%; color: rgb(42, 63, 21);}
-.cada-item-cardapio p{padding-bottom: 30px; padding-left: 2%; width: 550px;  max-width: 100%; color: rgba(0, 0, 0, 0.698);}
-
+.cada-item-cardapio {
+  background-color: var(--corPrincipal);
+  border-radius: 10px;
+}
+.cada-item-cardapio h1 {
+  padding-top: 20px;
+}
+.cada-item-cardapio b {
+  padding-left: 2%;
+  color: var(--corPrincipal);
+  color: rgba(255, 255, 255, 0.89);
+}
+.cada-item-cardapio span {
+  width: 100%;
+  text-align: right;
+  max-width: 100%;
+  display: block;
+  padding-right: 2%;
+  color: rgba(255, 255, 255, 0.849);
+}
+.cada-item-cardapio p {
+  padding-bottom: 30px;
+  padding-left: 2%;
+  width: 550px;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.657)
+}
 
 /*************************************************************/
 
-.img-pequeno{
-    width: 100%;
-    height: 200px;
-    min-height: 150px;
-    max-height: 100px;
-    background-image: url(/web/img/brett-jordan-m8pKY-8bdyo-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.img-pequeno {
+  width: 100%;
+  height: 200px;
+  min-height: 150px;
+  max-height: 100px;
+  background-image: url(/web/img/brett-jordan-m8pKY-8bdyo-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /***************************CONTATO******************************************/
 
-.contato{
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    padding: 40px 5%;
+.contato {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 40px 5%;
 }
 
-.center-contato{
-        width: 1000px;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 2% 2%;
+.center-contato {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2% 2%;
 }
 
-.text-contato h1{ 
-    text-align: center;    
-    font-size: 42px;
-    padding-top: 50px;  
-    max-width: 100%;
+.text-contato h1 {
+  text-align: center;
+  font-size: 42px;
+  padding-top: 50px;
+  max-width: 100%;
 }
 
-.all-box-contato{
-    width: 700px;
-    display: block;
-    margin: auto;
-    max-width: 100%;
+.all-box-contato {
+  width: 700px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
-.all-box-contato p{
-    color: var(--corPrincipal);
-    font-size: 20px;
+.all-box-contato p {
+  color: var(--corPrincipal);
+  font-size: 20px;
 }
 
-.all-box-contato a{
-    text-decoration: none;
-    color: rgb(63, 226, 34);
+.all-box-contato a {
+  text-decoration: none;
+  color: rgb(63, 226, 34);
 }
 
 /***********************GOOGLE MAPS**********************************/
 
-.google-maps{
-    width: 100%;
-    max-width: 100%;
-    height: 200px;
-    background-color: rgb(19, 13, 24);
-    margin-bottom: 30px;
+.google-maps {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  background-color: rgb(19, 13, 24);
+  margin-bottom: 30px;
 }
 
-.google-maps h1{
-    color: white;
-    text-align: center;
-    padding-top: 70px;
-    font-size: 50px;
+.google-maps h1 {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 50px;
 }
 
 /*****************************SOBRE****************************************/
 
-.h1-sobre h1{ 
-    text-align: center;
-    padding-top: 50px;
-    font-size: 40px;
-    color: var(--corPrincipal);
+.h1-sobre h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  color: var(--corPrincipal);
 }
 
-.center-sobre{
-    display: flex;
+.center-sobre {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.text-sobre {
+  width: 50%;
+  padding: 0 5%;
+  margin: auto;
+}
+
+.text-sobre p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.img-sobre {
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding-right: 2%;
+}
+
+.img-sobre img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 40px;
+}
+
+.horarios-sobre {
+  display: flex;
+  max-width: 100%;
+  text-align: center;
+}
+
+.horarios-sobre p {
+  color: var(--corPrincipal);
+  text-align: center;
+  font-size: 15px;
+}
+
+.h-box {
+  padding: 20px 0;
+  width: 100%;
+}
+
+@media (max-width: 735px) {
+  .center-sobre {
+    display: block;
     width: 900px;
     max-width: 100%;
     margin: 0 auto;
     padding-top: 50px;
-}
-
-.text-sobre{
-    width: 50%;
-    padding: 0 5%;
-    margin: auto;
-}
-
-.text-sobre p{
-    font-size: 20px;
-    text-align: center;
-}
-
-.img-sobre{
-    width: 50%;
+  }
+  .img-sobre {
+    width: 100%;
     display: block;
     text-align: center;
-    padding-right: 2%;
-}
-
-.img-sobre img{
-    width: 500px;
-    max-width: 100%;
-    border-radius: 40px;
-}
-
-.horarios-sobre{
-    display: flex;
-    max-width: 100%;
-    text-align: center;
-}
-
-.horarios-sobre p{
-    color: var(--corPrincipal);
-    text-align: center;
-    font-size: 15px;
-}
-
-.h-box{
-    padding: 20px 0;
+    padding: 0 2%;
+  }
+  .text-sobre {
     width: 100%;
-
-}
-
-@media(max-width:735px){
-    .center-sobre{
-        display: block;
-        width: 900px;
-        max-width: 100%;
-        margin: 0 auto;
-        padding-top: 50px;
-}
-      .img-sobre{
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 0 2%;
-}
-    .text-sobre{
-        width: 100%;
-        padding: 0 5%;
-        margin: auto;
-    
-}
-    .text-sobre p{
-        font-size: 20px;
-        text-align: left
-    }
+    padding: 0 5%;
+    margin: auto;
+  }
+  .text-sobre p {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 /**************************************Footer**************************************************/
 
-.center-footer{
-    background-color: var(--corPrincipal);
-    margin-top: 60px;
-    max-width: 100%;}
-
-.center-footer h1{ 
-    color: white; 
-    text-align: center;
-    padding: 2%; 
-    font-size: 18px;
+.center-footer {
+  background-color: var(--corPrincipal);
+  margin-top: 60px;
+  max-width: 100%;
 }
 
+.center-footer h1 {
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 18px;
+}
