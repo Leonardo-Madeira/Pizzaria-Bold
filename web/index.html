@@ -14,16 +14,16 @@
 </head>
 <body>
 
-    <section class="main">
+    <section class="main" id="home">
         <div class="main-menu">
             <div class="center">
                 <div class="menu">
                     <div class="logo">Pizzaria Bold</div>
                     <div class="itens-menu">
-                        <span><a href="">Home</a></span>
-                        <span><a href="">Cardápio</a></span>
-                        <span><a href="">Contato</a></span>
-                        <span><a href="">Sobre</a></span>
+                        <span><a href="#home">Home</a></span>
+                        <span><a href="#cardapio">Cardápio</a></span>
+                        <span><a href="#contato">Contato</a></span>
+                        <span><a href="#sobre">Sobre</a></span>
                     </div>
                     <div class="itens-menu-mobile" onclick="abrir()">
                         <img style="cursor: pointer;" src="./img/icone-menu-branco.png" alt="" >
@@ -34,10 +34,10 @@
                     <div id="myNav" class="all-menu-mobile-efeito">
                         <a href="javascript:void(0)" class="closebtn" onclick="fechar()">&times;</a>
                         <div class="itens-menu-mobile-efeito">
-                        <a href="#">Home</a>
-                        <a href="#">Cardápio</a>
-                        <a href="#">Contato</a>
-                        <a href="">Sobre</a>
+                        <a href="#home">Home</a>
+                        <a href="#cardapio">Cardápio</a>
+                        <a href="#contato">Contato</a>
+                        <a href="#sobre">Sobre</a>
                         </div>
                     </div>
                     <script>
@@ -55,7 +55,7 @@
         <div class="text-main"><h1><strong>Pizzaria Bold</strong> </h1><span><strong> A melhor Pizzaria de Florianópolis</strong> </span></div>
     </section>
 
-    <section class="cardapio">
+    <section class="cardapio" id="cardapio">
         <div class="titulo-cardapio"><h1>Cardápio</h1></div>
         <div class="center">           
             <div class="all-cardapio">
@@ -87,7 +87,7 @@
 
     <section class="img-pequeno"></section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
             <div class="text-contato"><h1>Contato</h1></div>
         <div class="center-contato">
             <div class="all-box-contato">
@@ -101,7 +101,7 @@
         <h1>GOOGLE MAPS</h1>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="h1-sobre"><h1>Sobre</h1></div>
             <div class="center-sobre">
                 <div class="text-sobre">
