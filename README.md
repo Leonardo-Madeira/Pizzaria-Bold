@@ -1,2 +1,2 @@
 # PizzariaBold
- Modelo de Pizzaria, Projeto completo. Não tenho design, então dei um jeito para ficar ''bonito''. Alguma dica? entra em contato :P
+Pizzeria Model, Complete Project. I don't have design, so I managed to be ''beautiful''. Any tips? get in touch :P
