@@ -25,14 +25,7 @@ body {
   max-width: 100%;
 }
 
-.main-menu {
-  height: 60px;
-  background-color: rgba(19, 13, 24, 0.52);
-  margin: auto;
-  width: 100%;
-  max-width: 100%;
-  position: fixed !important;
-}
+
 
 .center {
   display: block;
